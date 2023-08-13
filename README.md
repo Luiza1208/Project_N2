@@ -165,5 +165,33 @@
 ]
 ```
 
+## 4. •	Реализовать метод, в котором пользователь вводит часть названия города и возвращает ему подсказку с возможными вариантами продолжений.
+<code>GET //api/List/citie\<name></code> - вернет полную информацию о сравниваемых населенных пунктах, а также информацию о временной зоне, и о том какой населенный пункт севернее. Дополнительно выдаст разницу во времени между таймзонами
+### Пример запроса
+<code>http://127.0.0.1:8000/api/List/citieгора%20зуб</code>
+
+### Ответ
+Успешный ответ приходит с кодом <code>200 OK</code> и содержит тело:
+```json
+[
+    "Gora Zub Sofridzhu",
+    "Gora Zuberkha",
+    "Gora Zubtsy",
+    "Gora Zubanchi",
+    "Gora Zubrilova",
+    "Gora Zubakina",
+    "Gora Zubatka",
+    "Gora Zubets",
+    "Gora Zubchataya",
+    "Gora Zubchataya",
+    "Gora Zub",
+    "Gora Zub",
+    "Gora Zubyatka",
+    "Gora Zubastaya",
+    "Gora Zubr",
+    "Gora Zubova",
+    "Gora Zubar\u00ebvka"
+]
+```
 
 
