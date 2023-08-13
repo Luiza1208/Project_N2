@@ -1,7 +1,7 @@
 # Описание методов 
 
 
-##	Метод принимает идентификатор geonameid и возвращает информацию о городе.
+## 1.  Метод принимает идентификатор geonameid и возвращает информацию о городе.
 <code>GET /api/cities/\<int:value></code> - вернет полную информацию о населенном пункте
 
 ### Пример запроса
@@ -165,53 +165,5 @@
 ]
 ```
 
-##	Метод принимает часть названия населенного пункта и возвращает подсказку с возможными вариантами продолжения.
-<code>GET api/get_matches</code> - вернет список с подсказками
 
-Параметры <code>?city</code> - Строчка, содержащая часть названия населенного пункта
-
-### Пример запроса
-<code>GET api/get_matches?city=Томс</code>
-
-### Ответ
-Успешный ответ приходит с кодом <code>200 OK</code> и содержит тело:
-```json
-{
-  "0": "Tomsino",
-  "1": "Tomsharovo",
-  "2": "Stantsiya Tomsk Vtoroy",
-  "3": "Stantsiya Tomsk Pervyy",
-  "4": "Tomskoye",
-  "5": "Tomskiy Rayon",
-  "6": "Tomskiy Khutor",
-  "7": "Tomsk Oblast",
-  "8": "Tomskaya",
-  "9": "Tomskaya",
-  "10": "Tomskaya",
-  "11": "Tomsk",
-  "12": "Ozero Bol’shoye Tomskoye",
-  "13": "Ozero Maloye Tomskoye",
-  "14": "Tomskiy",
-  "15": "Tomskoye",
-  "16": "Tomskoye",
-  "17": "Tomsyu",
-  "18": "Ostrov Tomskiy",
-  "19": "Tomsha",
-  "20": "Tomsko-Obskaya Lesnaya Dacha",
-  "21": "Ozero Tomskoye",
-  "22": "Urochishche Tomshina",
-  "23": "Tomsino",
-  "24": "Ozero Tomsino",
-  "25": "Tomsha",
-  "26": "Tomskiy",
-  "27": "Tomsk Bogashevo Airport",
-  "28": "Gora Tomskaya",
-  "29": "Stantsiya Tomsk-Severnyy",
-  "30": "Meriya Goroda Tomska",
-  "31": "Duma Goroda Tomska",
-  "32": "Tomskaya Tamozhnya",
-  "33": "Tomskiy Oblastnoy Sud",
-  "34": "Tomsk"
-}
-```
 
